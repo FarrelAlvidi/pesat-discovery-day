@@ -1,28 +1,38 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="/src/style.css">
-        <link href="src/output.css" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.min.css">
 
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/src/style.css" />
+    <link href="src/output.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.min.css" />
 
-        <title>RPL</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet" />
 
-        <!-- Hours Wasted : 100hrs -->
+    <!-- Swiper js -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
-    </head>
-    <body class="p-10 pt-48 md:pt-[80px]">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css" rel="stylesheet" />
 
-      <nav class="px-6 shadow-lg fixed top-0 left-0 w-full bg-white/60 backdrop-blur-lg z-20">
-        <div class="max-w-screen-xl mx-auto p-2 items-center flex justify-between text-slate-500">
-            <a href="#hero"><img src="assets/LOGO-SMK-PESAT-IT-XPRO.webp" class="w-32" alt="Logo"></a>
-            <div class="nav-links md:static md:min-h-fit md:w-auto md:bg-transparent bg-white/60 backdrop-blur-lg md:backdrop-blur-none md:shadow-none text-[1rem] absolute z-20  shadow-lg left-0 top-[-300%] w-full items-center p-5 py-10" >
+
+    <title>RPL</title>
+
+    <!-- Hours Wasted : 100hrs -->
+</head>
+
+<body class="pt-48">
+    <nav class="px-6 shadow-lg fixed top-0 left-0 w-full bg-white/60 backdrop-blur-lg z-50">
+        <div class="max-w-screen-xl mx-auto items-center flex justify-between text-slate-500">
+            <a href="#hero"><img src="assets/LOGO-SMK-PESAT-IT-XPRO.webp" class="w-32" alt="Logo" /></a>
+            <div
+                class="nav-links md:static md:min-h-fit md:w-auto md:bg-transparent bg-white transition-all duration-500 backdrop-blur-lg md:backdrop-blur-none md:shadow-none text-[1rem] absolute z-20 shadow-lg left-0 top-[-300%] w-full items-center p-5 py-10">
                 <ul class="md:space-x-8 md:space-y-0 space-y-12 flex md:flex-row flex-col items-center">
                     <li>
                         <a href="#games">Games</a>
@@ -35,180 +45,337 @@
                     </li>
                 </ul>
             </div>
-            <div class="flex md:hidden items-center ">
+            <div class="">
+                
+                <a class="" target="_blank" href="https://api.whatsapp.com/send/?phone=6287711177442&text&type=phone_number&app_absent=0"><ion-icon name="logo-whatsapp"></ion-icon></a>
+            </div>
+            <div class="flex md:hidden items-center">
                 <ion-icon onclick="onToggleMenu(this)" name="menu" class="text-3xl md:hidden"></ion-icon>
             </div>
         </div>
-      </nav>
+    </nav>
 
-      <!-- HERO -->
-      <header id="hero">
-        <div class="max-w-screen-xl mx-auto h-[90vh] flex flex-col md:flex-row justify-between items-center gap-20">
-            <div class="text-center md:text-left">
-                <h3 class="font-semibold text-slate-500">IT Expert dan Professional</h3>
-                <h1 class="text-[2.8rem] lg:text-[4.5rem] text-slate-700 font-semibold">Portofolio RPL <br> SMK Pesat IT XPro</h1>
-                <h5 class="text-[1] lg:text-[1.3rem] mt-4 text-slate-600">Preview hasil Project Siswa Rekayasa Perangkat Lunak</h5>
+    <!-- HERO -->
+    <header id="hero">
+        <div class="max-w-screen-xl mx-auto h-auto py-10 flex flex-col justify-between items-center gap-20">
+            <div class="text-center">
+                <h3 class="font-semibold text-slate-500">
+                    IT Expert dan Professional
+                </h3>
+                <h1 class="text-[2.8rem] lg:text-[4.5rem] text-slate-700 font-semibold">
+                    Portofolio RPL <br />
+                    SMK Pesat IT XPro
+                </h1>
+                <h5 class="text-[1] lg:text-[1.3rem] mt-4 text-slate-600">
+                    Preview hasil Project Siswa Rekayasa Perangkat Lunak
+                </h5>
             </div>
             <div class="">
-                <img src="assets/3_siswa.png" class="w-[26rem] lg:w-[32rem]" alt="">
+                <img src="assets/3_siswa.png" class="w-[26rem] lg:w-[32rem]" alt="" />
             </div>
         </div>
-      </header>
-      <!-- END HERO -->
+    </header>
+    <!-- END HERO -->
 
-
-      <!-- GAMES -->
-      <section id="games" class="bg-gray-50 py-28 mt-10">
-        <div class="max-w-screen-xl mx-auto ">
-            <h1 class="text-[2.6rem] md:text-[3.6rem] text-slate-700 font-semibold text-center">Games Section <span class="text-blue-600">.</span></h1>
-            <div class="grid grid-cols-1 lg:grid-cols-3  gap-8 mt-12">
-                <div class="bg-white w-full shadow-lg hover:-translate-y-4 duration-300 transition-all hover:shadow-xl">
-                    <img src="assets/catat-ini-7-dampak-seks-bebas-bagi-kesehatan-fisik-dan-mental-halodoc.jpg" alt="">
-                    <div class="p-6">
-                        <h3 class="text-slate-700 text-[1.5rem] mt-5 font-semibold ">Whack-A-Mole</h3>
-                        <p class="mt-3 text-[1rem]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus quaerat, adipisci quam est, ut sunt
-                            incidunt corporis Lorem ipsum natus porro, officiis soluta maxime delectus qui quos, incidunt vero laborum explicabo! Possimus?</p>
-                        <button class="mt-5 text-slate-600 text-[1.05rem]"><a href="/">Read More</a></button>
-                    </div>
-                </div>
-                <div class="bg-white w-full shadow-lg hover:-translate-y-4 duration-300 transition-all hover:shadow-xl">
-                    <img src="assets/catat-ini-7-dampak-seks-bebas-bagi-kesehatan-fisik-dan-mental-halodoc.jpg" alt="">
-                    <div class="p-6">
-                        <h3 class="text-slate-700 text-[1.5rem] mt-5 font-semibold ">Tic-Tac-Toe</h3>
-                        <p class="mt-3 text-[1rem]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus quaerat, adipisci quam est, ut sunt
-                            incidunt corporis Lorem ipsum natus porro, officiis soluta maxime delectus qui quos, incidunt vero laborum explicabo! Possimus?</p>
-                        <button class="mt-5 text-slate-600 text-[1.05rem]"><a href="/">Read More</a></button>
-                    </div>
-                </div>
-                <div class="bg-white w-full shadow-lg hover:-translate-y-4 duration-300 transition-all hover:shadow-xl">
-                    <img src="assets/catat-ini-7-dampak-seks-bebas-bagi-kesehatan-fisik-dan-mental-halodoc.jpg" alt="">
-                    <div class="p-6">
-                        <h3 class="text-slate-700 text-[1.5rem] mt-5 font-semibold ">Game 3</h3>
-                        <p class="mt-3 text-[1rem]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus quaerat, adipisci quam est, ut sunt
-                            incidunt corporis Lorem ipsum natus porro, officiis soluta maxime delectus qui quos, incidunt vero laborum explicabo! Possimus?</p>
-                        <button class="mt-5 text-slate-600 text-[1.05rem]"><a href="/">Read More</a></button>
-                    </div>
-                </div>
+    <div id="default-carousel" class="relative w-full p-32" data-carousel="slide">
+        <!-- Carousel wrapper -->
+        <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
+            <!-- Item 1 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img src="/assets/sertikom-1.jpeg"
+                    class="absolute block  w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+            </div>
+            <!-- Item 2 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img src="/assets/catat-ini-7-dampak-seks-bebas-bagi-kesehatan-fisik-dan-mental-halodoc.jpg"
+                    class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+            </div>
+            <!-- Item 3 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img src="/docs/images/carousel/carousel-3.svg"
+                    class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+            </div>
+            <!-- Item 4 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img src="/docs/images/carousel/carousel-4.svg"
+                    class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+            </div>
+            <!-- Item 5 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img src="/docs/images/carousel/carousel-5.svg"
+                    class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
             </div>
         </div>
-      </section>
-      <!-- END GAMES -->
+        <!-- Slider indicators -->
+        <div class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
+            <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1"
+                data-carousel-slide-to="0"></button>
+            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2"
+                data-carousel-slide-to="1"></button>
+            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3"
+                data-carousel-slide-to="2"></button>
+            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4"
+                data-carousel-slide-to="3"></button>
+            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5"
+                data-carousel-slide-to="4"></button>
+        </div>
+        <!-- Slider controls -->
+        <button type="button"
+            class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+            data-carousel-prev>
+            <span
+                class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M5 1 1 5l4 4" />
+                </svg>
+                <span class="sr-only">Previous</span>
+            </span>
+        </button>
+        <button type="button"
+            class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+            data-carousel-next>
+            <span
+                class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="m1 9 4-4-4-4" />
+                </svg>
+                <span class="sr-only">Next</span>
+            </span>
+        </button>
+    </div>
 
 
-      <!-- WEB DESIGN -->
-    <section id="webdesign" class="bg-white py-28">
-        <div class="max-w-screen-xl mx-auto ">
-            <h1 class="text-[3.6rem] text-slate-700 font-semibold text-center">Web Design Section <span
-                    class="text-blue-600">.</span></h1>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 gap-y-16 mt-12">
-                <div class="bg-white w-full shadow-lg">
-                    <img src="assets/catat-ini-7-dampak-seks-bebas-bagi-kesehatan-fisik-dan-mental-halodoc.jpg"  alt="">
+    <!-- GAMES -->
+    <section id="games" class="bg-gray-50 py-28 mt-10 p-10">
+        <div class="max-w-screen-xl mx-auto">
+            <h1 class="text-[2.4rem] md:text-[3.6rem] text-slate-700 font-semibold text-center">
+                Games Section <span class="text-blue-600">.</span>
+            </h1>
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 mt-12">
+                <div class="bg-white w-full shadow-lg hover:-translate-y-4 duration-300 transition-all hover:shadow-xl">
+                    <img src="assets/catat-ini-7-dampak-seks-bebas-bagi-kesehatan-fisik-dan-mental-halodoc.jpg"
+                        alt="" />
                     <div class="p-6">
-                        <h3 class="text-slate-700 text-[1.5rem] mt-5 font-semibold ">Web Design 1</h3>
-                        <p class="mt-3 text-[1rem]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus
-                            quaerat, adipisci quam est, ut sunt
-                            incidunt corporis Lorem ipsum natus porro, officiis soluta maxime delectus qui quos, incidunt
-                            vero laborum explicabo! Possimus?</p>
-                        <button class="mt-12 text-white text-[1.05rem] bg-blue-600 hover:bg-orange-300 transition-colors duration-[400ms] p-3 uppercase text-sm rounded font-semibold tracking-wider w-32"><a href="/">Preview</a></button>
+                        <h3 class="text-slate-700 text-[1.5rem] mt-5 font-semibold">
+                            Whack-A-Mole
+                        </h3>
+                        <p class="mt-3 text-[1rem]">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Accusamus quaerat, adipisci quam est, ut sunt incidunt corporis
+                            Lorem ipsum natus porro, officiis soluta maxime delectus qui
+                            quos, incidunt vero laborum explicabo! Possimus?
+                        </p>
+                        <button class="mt-5 text-slate-600 text-[1.05rem]">
+                            <a href="/">Read More</a>
+                        </button>
                     </div>
                 </div>
-                <div class="bg-white w-full shadow-lg">
-                    <img src="assets/catat-ini-7-dampak-seks-bebas-bagi-kesehatan-fisik-dan-mental-halodoc.jpg" alt="">
+                <div class="bg-white w-full shadow-lg hover:-translate-y-4 duration-300 transition-all hover:shadow-xl">
+                    <img src="assets/catat-ini-7-dampak-seks-bebas-bagi-kesehatan-fisik-dan-mental-halodoc.jpg"
+                        alt="" />
                     <div class="p-6">
-                        <h3 class="text-slate-700 text-[1.5rem] mt-5 font-semibold ">Web Design 2</h3>
-                        <p class="mt-3 text-[1rem]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus
-                            quaerat, adipisci quam est, ut sunt
-                            incidunt corporis Lorem ipsum natus porro, officiis soluta maxime delectus qui quos, incidunt
-                            vero laborum explicabo! Possimus?</p>
-                        <button class="mt-12 text-white text-[1.05rem] bg-blue-600 hover:bg-orange-300 transition-colors duration-[400ms] p-3 uppercase text-sm rounded font-semibold tracking-wider w-32"><a href="/">Preview</a></button>
+                        <h3 class="text-slate-700 text-[1.5rem] mt-5 font-semibold">
+                            Tic-Tac-Toe
+                        </h3>
+                        <p class="mt-3 text-[1rem]">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Accusamus quaerat, adipisci quam est, ut sunt incidunt corporis
+                            Lorem ipsum natus porro, officiis soluta maxime delectus qui
+                            quos, incidunt vero laborum explicabo! Possimus?
+                        </p>
+                        <button class="mt-5 text-slate-600 text-[1.05rem]">
+                            <a href="/">Read More</a>
+                        </button>
                     </div>
                 </div>
-                <div class="bg-white w-full shadow-lg">
-                    <img src="assets/catat-ini-7-dampak-seks-bebas-bagi-kesehatan-fisik-dan-mental-halodoc.jpg" alt="">
+                <div class="bg-white w-full shadow-lg hover:-translate-y-4 duration-300 transition-all hover:shadow-xl">
+                    <img src="assets/catat-ini-7-dampak-seks-bebas-bagi-kesehatan-fisik-dan-mental-halodoc.jpg"
+                        alt="" />
                     <div class="p-6">
-                        <h3 class="text-slate-700 text-[1.5rem] mt-5 font-semibold ">Web Design 3</h3>
-                        <p class="mt-3 text-[1rem]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus
-                            quaerat, adipisci quam est, ut sunt
-                            incidunt corporis Lorem ipsum natus porro, officiis soluta maxime delectus qui quos, incidunt
-                            vero laborum explicabo! Possimus?</p>
-                        <button class="mt-12 text-white text-[1.05rem] bg-blue-600 hover:bg-orange-300 transition-colors duration-[400ms] p-3 uppercase text-sm rounded font-semibold tracking-wider w-32"><a href="/">Preview</a></button>
-                    </div>
-                </div>
-                <div class="bg-white w-full shadow-lg">
-                    <img src="assets/catat-ini-7-dampak-seks-bebas-bagi-kesehatan-fisik-dan-mental-halodoc.jpg" alt="">
-                    <div class="p-6">
-                        <h3 class="text-slate-700 text-[1.5rem] mt-5 font-semibold ">Web Design 4</h3>
-                        <p class="mt-3 text-[1rem]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus
-                            quaerat, adipisci quam est, ut sunt
-                            incidunt corporis Lorem ipsum natus porro, officiis soluta maxime delectus qui quos, incidunt
-                            vero laborum explicabo! Possimus?</p>
-                        <button class="mt-12 text-white text-[1.05rem] bg-blue-600 hover:bg-orange-300 transition-colors duration-[400ms] p-3 uppercase text-sm rounded font-semibold tracking-wider w-32"><a href="/">Preview</a></button>
+                        <h3 class="text-slate-700 text-[1.5rem] mt-5 font-semibold">
+                            Game 3
+                        </h3>
+                        <p class="mt-3 text-[1rem]">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Accusamus quaerat, adipisci quam est, ut sunt incidunt corporis
+                            Lorem ipsum natus porro, officiis soluta maxime delectus qui
+                            quos, incidunt vero laborum explicabo! Possimus?
+                        </p>
+                        <button class="mt-5 text-slate-600 text-[1.05rem]">
+                            <a href="/">Read More</a>
+                        </button>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-       <!-- END WEB DESIGN -->
+    <!-- END GAMES -->
 
-
-       <!-- WEB PROGRAMMING -->
-        <section id="webprogramming" class="bg-gray-50 py-28">
-            <div class="max-w-screen-xl mx-auto ">
-                <h1 class="text-[3.6rem] text-slate-700 font-semibold text-center">Web Programming Section <span
-                        class="text-blue-600">.</span></h1>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 gap-y-16 mt-12">
-                    <div class="bg-white w-full shadow-lg">
-                        <img src="assets/catat-ini-7-dampak-seks-bebas-bagi-kesehatan-fisik-dan-mental-halodoc.jpg" alt="">
-                        <div class="p-6">
-                            <h3 class="text-slate-700 text-[1.5rem] mt-5 font-semibold ">Web Programming 1</h3>
-                            <p class="mt-3 text-[1rem]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus
-                                quaerat, adipisci quam est, ut sunt
-                                incidunt corporis Lorem ipsum natus porro, officiis soluta maxime delectus qui quos, incidunt
-                                vero laborum explicabo! Possimus?</p>
-                            <button
-                                class="mt-12 text-white text-[1.05rem] bg-blue-600 hover:bg-orange-300 transition-colors duration-[400ms] p-3 uppercase text-sm rounded font-semibold tracking-wider w-32"><a
-                                    href="/">Preview</a></button>
-                        </div>
-                    </div>
-                    <div class="bg-white w-full shadow-lg">
-                        <img src="assets/catat-ini-7-dampak-seks-bebas-bagi-kesehatan-fisik-dan-mental-halodoc.jpg" alt="">
-                        <div class="p-6">
-                            <h3 class="text-slate-700 text-[1.5rem] mt-5 font-semibold ">Web Programming 2</h3>
-                            <p class="mt-3 text-[1rem]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus
-                                quaerat, adipisci quam est, ut sunt
-                                incidunt corporis Lorem ipsum natus porro, officiis soluta maxime delectus qui quos, incidunt
-                                vero laborum explicabo! Possimus?</p>
-                            <button
-                                class="mt-12 text-white text-[1.05rem] bg-blue-600 hover:bg-orange-300 transition-colors duration-[400ms] p-3 uppercase text-sm rounded font-semibold tracking-wider w-32"><a
-                                    href="/">Preview</a></button>
-                        </div>
-                    </div>
-                    
-                </div>
-                <div class="bg-white md:w-1/2 mx-auto mt-10 shadow-lg">
-                    <img src="assets/catat-ini-7-dampak-seks-bebas-bagi-kesehatan-fisik-dan-mental-halodoc.jpg" alt="">
+    <!-- WEB DESIGN -->
+    <section id="webdesign" class="bg-white py-28 p-10">
+        <div class="max-w-screen-xl mx-auto">
+            <h1 class="text-[2.4rem] md:text-[3.6rem] text-slate-700 font-semibold text-center">
+                Web Design Section <span class="text-blue-600">.</span>
+            </h1>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 gap-y-16 mt-12">
+                <div class="bg-white w-full shadow-lg">
+                    <img src="assets/catat-ini-7-dampak-seks-bebas-bagi-kesehatan-fisik-dan-mental-halodoc.jpg"
+                        alt="" />
                     <div class="p-6">
-                        <h3 class="text-slate-700 text-[1.5rem] mt-5 font-semibold ">Web Programming 3</h3>
-                        <p class="mt-3 text-[1rem]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus
-                            quaerat, adipisci quam est, ut sunt
-                            incidunt corporis Lorem ipsum natus porro, officiis soluta maxime delectus qui quos, incidunt
-                            vero laborum explicabo! Possimus?</p>
+                        <h3 class="text-slate-700 text-[1.5rem] mt-5 font-semibold">
+                            Web Design 1
+                        </h3>
+                        <p class="mt-3 text-[1rem]">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Accusamus quaerat, adipisci quam est, ut sunt incidunt corporis
+                            Lorem ipsum natus porro, officiis soluta maxime delectus qui
+                            quos, incidunt vero laborum explicabo! Possimus?
+                        </p>
                         <button
-                            class="mt-12 text-white text-[1.05rem] bg-blue-600 hover:bg-orange-300 transition-colors duration-[400ms] p-3 uppercase text-sm rounded font-semibold tracking-wider w-32"><a
-                                href="/">Preview</a></button>
+                            class="mt-12 text-white text-[1.05rem] bg-blue-600 hover:bg-orange-300 transition-colors duration-[400ms] p-3 uppercase text-sm rounded font-semibold tracking-wider w-32">
+                            <a href="/">Preview</a>
+                        </button>
+                    </div>
+                </div>
+                <div class="bg-white w-full shadow-lg">
+                    <img src="assets/catat-ini-7-dampak-seks-bebas-bagi-kesehatan-fisik-dan-mental-halodoc.jpg"
+                        alt="" />
+                    <div class="p-6">
+                        <h3 class="text-slate-700 text-[1.5rem] mt-5 font-semibold">
+                            Web Design 2
+                        </h3>
+                        <p class="mt-3 text-[1rem]">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Accusamus quaerat, adipisci quam est, ut sunt incidunt corporis
+                            Lorem ipsum natus porro, officiis soluta maxime delectus qui
+                            quos, incidunt vero laborum explicabo! Possimus?
+                        </p>
+                        <button
+                            class="mt-12 text-white text-[1.05rem] bg-blue-600 hover:bg-orange-300 transition-colors duration-[400ms] p-3 uppercase text-sm rounded font-semibold tracking-wider w-32">
+                            <a href="/">Preview</a>
+                        </button>
+                    </div>
+                </div>
+                <div class="bg-white w-full shadow-lg">
+                    <img src="assets/catat-ini-7-dampak-seks-bebas-bagi-kesehatan-fisik-dan-mental-halodoc.jpg"
+                        alt="" />
+                    <div class="p-6">
+                        <h3 class="text-slate-700 text-[1.5rem] mt-5 font-semibold">
+                            Web Design 3
+                        </h3>
+                        <p class="mt-3 text-[1rem]">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Accusamus quaerat, adipisci quam est, ut sunt incidunt corporis
+                            Lorem ipsum natus porro, officiis soluta maxime delectus qui
+                            quos, incidunt vero laborum explicabo! Possimus?
+                        </p>
+                        <button
+                            class="mt-12 text-white text-[1.05rem] bg-blue-600 hover:bg-orange-300 transition-colors duration-[400ms] p-3 uppercase text-sm rounded font-semibold tracking-wider w-32">
+                            <a href="/">Preview</a>
+                        </button>
+                    </div>
+                </div>
+                <div class="bg-white w-full shadow-lg">
+                    <img src="assets/catat-ini-7-dampak-seks-bebas-bagi-kesehatan-fisik-dan-mental-halodoc.jpg"
+                        alt="" />
+                    <div class="p-6">
+                        <h3 class="text-slate-700 text-[1.5rem] mt-5 font-semibold">
+                            Web Design 4
+                        </h3>
+                        <p class="mt-3 text-[1rem]">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Accusamus quaerat, adipisci quam est, ut sunt incidunt corporis
+                            Lorem ipsum natus porro, officiis soluta maxime delectus qui
+                            quos, incidunt vero laborum explicabo! Possimus?
+                        </p>
+                        <button
+                            class="mt-12 text-white text-[1.05rem] bg-blue-600 hover:bg-orange-300 transition-colors duration-[400ms] p-3 uppercase text-sm rounded font-semibold tracking-wider w-32">
+                            <a href="/">Preview</a>
+                        </button>
                     </div>
                 </div>
             </div>
-        </section>
-        <!-- END WEB PROGRAMMING -->
+        </div>
+    </section>
+    <!-- END WEB DESIGN -->
 
+    <!-- WEB PROGRAMMING -->
+    <section id="webprogramming" class="bg-gray-50 py-28 p-10">
+        <div class="max-w-screen-xl mx-auto">
+            <h1 class="text-[2.4rem] md:text-[3.6rem] text-slate-700 font-semibold text-center">
+                Web Programming Section <span class="text-blue-600">.</span>
+            </h1>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 gap-y-16 mt-12">
+                <div class="bg-white w-full shadow-lg">
+                    <img src="assets/catat-ini-7-dampak-seks-bebas-bagi-kesehatan-fisik-dan-mental-halodoc.jpg"
+                        alt="" />
+                    <div class="p-6">
+                        <h3 class="text-slate-700 text-[1.5rem] mt-5 font-semibold">
+                            Web Programming 1
+                        </h3>
+                        <p class="mt-3 text-[1rem]">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Accusamus quaerat, adipisci quam est, ut sunt incidunt corporis
+                            Lorem ipsum natus porro, officiis soluta maxime delectus qui
+                            quos, incidunt vero laborum explicabo! Possimus?
+                        </p>
+                        <button
+                            class="mt-12 text-white text-[1.05rem] bg-blue-600 hover:bg-orange-300 transition-colors duration-[400ms] p-3 uppercase text-sm rounded font-semibold tracking-wider w-32">
+                            <a href="/">Preview</a>
+                        </button>
+                    </div>
+                </div>
+                <div class="bg-white w-full shadow-lg">
+                    <img src="assets/catat-ini-7-dampak-seks-bebas-bagi-kesehatan-fisik-dan-mental-halodoc.jpg"
+                        alt="" />
+                    <div class="p-6">
+                        <h3 class="text-slate-700 text-[1.5rem] mt-5 font-semibold">
+                            Web Programming 2
+                        </h3>
+                        <p class="mt-3 text-[1rem]">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Accusamus quaerat, adipisci quam est, ut sunt incidunt corporis
+                            Lorem ipsum natus porro, officiis soluta maxime delectus qui
+                            quos, incidunt vero laborum explicabo! Possimus?
+                        </p>
+                        <button
+                            class="mt-12 text-white text-[1.05rem] bg-blue-600 hover:bg-orange-300 transition-colors duration-[400ms] p-3 uppercase text-sm rounded font-semibold tracking-wider w-32">
+                            <a href="/">Preview</a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-white md:w-1/2 mx-auto mt-10 shadow-lg">
+                <img src="assets/catat-ini-7-dampak-seks-bebas-bagi-kesehatan-fisik-dan-mental-halodoc.jpg" alt="" />
+                <div class="p-6">
+                    <h3 class="text-slate-700 text-[1.5rem] mt-5 font-semibold">
+                        Web Programming 3
+                    </h3>
+                    <p class="mt-3 text-[1rem]">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus
+                        quaerat, adipisci quam est, ut sunt incidunt corporis Lorem ipsum
+                        natus porro, officiis soluta maxime delectus qui quos, incidunt
+                        vero laborum explicabo! Possimus?
+                    </p>
+                    <button
+                        class="mt-12 text-white text-[1.05rem] bg-blue-600 hover:bg-orange-300 transition-colors duration-[400ms] p-3 uppercase text-sm rounded font-semibold tracking-wider w-32">
+                        <a href="/">Preview</a>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END WEB PROGRAMMING -->
 
-        <footer>
+    <footer></footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
+<script src="src/main.js"></script>
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://kit.fontawesome.com/fb890e3537.js" crossorigin="anonymous"></script>
 
-        </footer>
-    </body>
-
-    <script src="src/main.js"></script>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://kit.fontawesome.com/fb890e3537.js" crossorigin="anonymous"></script>
 </html>
