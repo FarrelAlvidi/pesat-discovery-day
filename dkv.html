@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/src/style.css" />
+    <link href="src/output.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.min.css" />
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet" />
+    
+    <!-- Swiper js -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css" rel="stylesheet" />
+    <title>Document</title>
+</head>
+<body id="dkv">
+    
+    <nav class="px-6 fixed top-0 left-0 w-full bg-white/60 backdrop-blur-lg  z-50">
+        <div class="max-w-screen-xl mx-auto items-center flex justify-between text-slate-500">
+            <a href="#hero"><img src="assets/LOGO-SMK-PESAT-IT-XPRO.webp" class="w-32" alt="Logo" /></a>
+            <div
+                class="nav-links md:static md:min-h-fit md:w-auto md:bg-transparent bg-white transition-all duration-500 backdrop-blur-lg md:backdrop-blur-none md:shadow-none text-[1rem] absolute z-20 shadow-lg left-0 top-[-300%] w-full items-center p-5 py-10">
+                <ul class="md:space-x-8 md:space-y-0 space-y-12 flex md:flex-row flex-col items-center font-semibold">
+                    <li>
+    
+                        <button id="dropdownHoverButton" data-dropdown-toggle="dropdownHover" data-dropdown-trigger="hover"
+                            class=" text-center inline-flex items-center" type="button"><a href="index.html">RPL</a><svg
+                                class="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                viewBox="0 0 10 6">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="m1 1 4 4 4-4" />
+                            </svg>
+                        </button>
+    
+                        <!-- Dropdown menu -->
+                        <div id="dropdownHover" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44">
+                            <ul class="py-2 text-sm font-medium" aria-labelledby="dropdownHoverButton">
+                                <li>
+                                    <a href="index.html" class="block px-4 py-2 hover:bg-gray-100">Games</a>
+                                </li>
+                                <li>
+                                    <a href="index.html" class="block px-4 py-2 hover:bg-gray-100">Web Programming</a>
+                                </li>
+                                <li>
+                                    <a href="index.html" class="block px-4 py-2 hover:bg-gray-100">Web Design</a>
+                                </li>
+                            </ul>
+                        </div>
+    
+                    </li>
+                    <li>
+    
+                        <button id="dropdownHoverButton2" data-dropdown-toggle="dropdownHover2"
+                            data-dropdown-trigger="hover" class=" text-center inline-flex items-center" type="button"><a
+                                href="dkv.html">DKV</a><svg class="w-2.5 h-2.5 ms-3" aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="m1 1 4 4 4-4" />
+                            </svg>
+                        </button>
+    
+                        <!-- Dropdown menu -->
+                        <div id="dropdownHover2"
+                            class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44">
+                            <ul class="py-2 text-sm font-medium" aria-labelledby="dropdownHoverButton">
+                                <li>
+                                    <a href="#desainillustrasi" class="block px-4 py-2 hover:bg-gray-100">Desain Illustrasi</a>
+                                </li>
+                                <li>
+                                    <a href="#photoproduct" class="block px-4 py-2 hover:bg-gray-100">Photo Product</a>
+                                </li>
+                                <li>
+                                    <a href="#photography" class="block px-4 py-2 hover:bg-gray-100">Photography</a>
+                                </li>
+                            </ul>
+                        </div>
+    
+                    </li>
+                    <li>
+    
+                        <button id="dropdownHoverButton3" data-dropdown-toggle="dropdownHover3"
+                            data-dropdown-trigger="hover" class=" text-center inline-flex items-center" type="button"><a
+                                href="tkj.html">TKJ</a><svg class="w-2.5 h-2.5 ms-3" aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="m1 1 4 4 4-4" />
+                            </svg>
+                        </button>
+    
+                        <!-- Dropdown menu -->
+                        <div id="dropdownHover3"
+                            class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44">
+                            <ul class="py-2 text-sm font-medium" aria-labelledby="dropdownHoverButton">
+                                <li>
+                                    <a href="tkj.html" class="block px-4 py-2 hover:bg-gray-100 ">Karya Terbaik X</a>
+                                </li>
+                                <li>
+                                    <a href="tkj.html" class="block px-4 py-2 hover:bg-gray-100">Karya Terbaik XI</a>
+                                </li>
+                                <li>
+                                    <a href="tkj.html" class="block px-4 py-2 hover:bg-gray-100">Karya Terbaik XII</a>
+                                </li>
+                            </ul>
+                        </div>
+    
+                    </li>
+                </ul>
+            </div>
+            <div class="flex items-center gap-2">
+                <a href="" class="w-10 text-2xl flex justify-center items-center h-10 rounded-full text-center"><i
+                        class="fa-brands fa-instagram"></i></a>
+                <a class="text-2xl" target="_blank"
+                    href="https://api.whatsapp.com/send/?phone=6287711177442&text&type=phone_number&app_absent=0"><i
+                        class="fa-brands fa-whatsapp"></i></a>
+            </div>
+            <div class="flex md:hidden items-center">
+                <ion-icon onclick="onToggleMenu(this)" name="menu" class="text-3xl md:hidden"></ion-icon>
+            </div>
+        </div>
+    </nav>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
+<script src="src/main.js"></script>
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://kit.fontawesome.com/fb890e3537.js" crossorigin="anonymous"></script>
+</html>

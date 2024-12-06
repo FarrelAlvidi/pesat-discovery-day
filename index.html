@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
         integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <script src="https://unpkg.com/ionicons@4.  5.10-0/dist/ionicons.js"></script>
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet" />
@@ -22,38 +22,52 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-<link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css" rel="stylesheet" />
 
 
-    <title>RPL</title>
+    <title>Portofolio SMK Pesat IT XPRO</title>
 
     <!-- Hours Wasted : 100hrs -->
 </head>
 
 <body class="pt-48">
-    <nav class="px-6 fixed top-0 left-0 w-full bg-white/60 backdrop-blur-lg  z-50">
+    <nav class="px-6 fixed top-0 left-0 w-full bg-white/90 md:bg-white/60 backdrop-blur-lg  z-50">
         <div class="max-w-screen-xl mx-auto items-center flex justify-between text-slate-500">
             <a href="#hero"><img src="assets/LOGO-SMK-PESAT-IT-XPRO.webp" class="w-32" alt="Logo" /></a>
             <div
-                class="nav-links md:static md:min-h-fit md:w-auto md:bg-transparent bg-white transition-all duration-500 backdrop-blur-lg md:backdrop-blur-none md:shadow-none text-[1rem] absolute z-20 shadow-lg left-0 top-[-300%] w-full items-center p-5 py-10">
-                <ul class="md:space-x-8 md:space-y-0 space-y-12 flex md:flex-row flex-col items-center">
+                class="nav-links justify-center md:static md:min-h-fit md:w-auto md:bg-transparent bg-white/90 transition-all duration-500 backdrop-blur-lg md:backdrop-blur-none md:shadow-none text-[1rem] absolute z-20 shadow-lg left-0 top-[-500%] w-full items-center p-5 py-10">
+                <ul class="md:space-x-8 md:space-y-0 space-y-12 flex md:flex-row flex-col items-center font-semibold">
                     <li>
-                        <a href="#games">Games</a>
+                        <a href="#" class=" px-4 py-2">Games</a>
                     </li>
                     <li>
-                        <a href="#webdesign">Web Design</a>
+                        <a href="#" class=" px-4 py-2">Web Programming</a>
                     </li>
                     <li>
-                        <a href="#webprogramming">Web Programming</a>
+                        <a href="#" class=" px-4 py-2">Web Design</a>
+                    </li>
+                    <li>
+                        <a href="#" class=" px-4 py-2">Web Portofolio</a>
                     </li>
                 </ul>
+                <div class="flex w-full justify-center space-x-8 mt-12 items-center gap-2 md:hidden">
+                    <a href="https://www.instagram.com/smkpesat_itxpro/" target="_blank"
+                        class="w-10 text-2xl flex justify-center items-center h-10 rounded-full text-center"><i
+                            class="fa-brands fa-instagram"></i></a>
+                    <a class="text-2xl" target="_blank"
+                        href="https://api.whatsapp.com/send/?phone=6287711177442&text&type=phone_number&app_absent=0"><i
+                            class="fa-brands fa-whatsapp"></i></a>
+                </div>
             </div>
-            <div class="flex items-center gap-2">
-                <a href="" class="w-10 flex justify-center items-center h-10 rounded-full border border-gray-300 text-slate-800 text-center"><i class="fa-brands fa-instagram"></i></a>
-                <a class="" target="_blank" href="https://api.whatsapp.com/send/?phone=6287711177442&text&type=phone_number&app_absent=0"><i class="fa-brands fa-whatsapp"></i></a>
+            <div class="md:flex items-center gap-2 hidden ">
+                <a href="https://www.instagram.com/smkpesat_itxpro/" target="_blank" class="w-10 text-2xl flex justify-center items-center h-10 rounded-full text-center"><i
+                        class="fa-brands fa-instagram"></i></a>
+                <a class="text-2xl" target="_blank"
+                    href="https://api.whatsapp.com/send/?phone=6287711177442&text&type=phone_number&app_absent=0"><i
+                        class="fa-brands fa-whatsapp"></i></a>
             </div>
-            <div class="flex md:hidden items-center">
-                <ion-icon onclick="onToggleMenu(this)" name="menu" class="text-3xl md:hidden"></ion-icon>
+            <div class="flex md:hidden items-center cursor-pointer">
+                <i onclick="onToggleMenu(this)" name="menu" class=" text-3xl md:hidden fa-solid fa-bars"></i>
             </div>
         </div>
     </nav>
@@ -80,32 +94,72 @@
     </header>
     <!-- END HERO -->
 
-    <div id="default-carousel" class="relative w-full p-32" data-carousel="slide">
+    <div id="default-carousel" class="relative w-full p-8 my-20" data-carousel="slide">
         <!-- Carousel wrapper -->
-        <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
+        <div class="relative h-60 overflow-hidden rounded-lg md:h-96">
             <!-- Item 1 -->
             <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                <img src="/assets/sertikom-1.jpeg"
+                <img src="/assets/rpl.png"
                     class="absolute block  w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
             </div>
             <!-- Item 2 -->
             <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                <img src="/assets/catat-ini-7-dampak-seks-bebas-bagi-kesehatan-fisik-dan-mental-halodoc.jpg"
+                <img src="/assets/tkj.png"
                     class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
             </div>
             <!-- Item 3 -->
             <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                <img src="/docs/images/carousel/carousel-3.svg"
+                <img src="/assets/dkv.png"
                     class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
             </div>
             <!-- Item 4 -->
             <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                <img src="/docs/images/carousel/carousel-4.svg"
+                <img src="/assets/4.png"
                     class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
             </div>
             <!-- Item 5 -->
             <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                <img src="/docs/images/carousel/carousel-5.svg"
+                <img src="/assets/5.png"
+                    class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+            </div>
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img src="/assets/6.png"
+                    class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+            </div>
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img src="/assets/7.png"
+                    class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+            </div>
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img src="/assets/8.png"
+                    class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+            </div>
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img src="/assets/9.png"
+                    class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+            </div>
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img src="/assets/10.png"
+                    class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+            </div>
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img src="/assets/11.png"
+                    class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+            </div>
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img src="/assets/12.png"
+                    class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+            </div>
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img src="/assets/13.png"
+                    class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+            </div>
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img src="/assets/14.png"
+                    class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+            </div>
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img src="/assets/15.png"
                     class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
             </div>
         </div>
@@ -127,7 +181,7 @@
             class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
             data-carousel-prev>
             <span
-                class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white border group-focus:ring-2 group-focus:ring-white dark:group-focus:ring-gray-400/70 group-focus:outline-none">
                 <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true"
                     xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -140,7 +194,7 @@
             class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
             data-carousel-next>
             <span
-                class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white border group-focus:ring-2 group-focus:ring-white dark:group-focus:ring-gray-400/70 group-focus:outline-none">
                 <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true"
                     xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -159,152 +213,81 @@
                 Games Section <span class="text-blue-600">.</span>
             </h1>
             <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 mt-12">
-                <div class="bg-white w-full shadow-lg hover:-translate-y-4 duration-300 transition-all hover:shadow-xl">
-                    <img src="assets/catat-ini-7-dampak-seks-bebas-bagi-kesehatan-fisik-dan-mental-halodoc.jpg"
+                <div class="bg-white w-full shadow-lg hover:scale-[1.02] duration-300 transition-all hover:shadow-xl">
+                    <img src="assets/whackamole.png" class="h-48"
                         alt="" />
                     <div class="p-6">
-                        <h3 class="text-slate-700 text-[1.5rem] mt-5 font-semibold">
-                            Whack-A-Mole
-                        </h3>
-                        <p class="mt-3 text-[1rem]">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Accusamus quaerat, adipisci quam est, ut sunt incidunt corporis
-                            Lorem ipsum natus porro, officiis soluta maxime delectus qui
-                            quos, incidunt vero laborum explicabo! Possimus?
+                        <div class="flex items-center justify-evenly">
+                            <h3 class="text-slate-700 text-[1.6rem] mt-5 font-semibold">
+                                Whack <br>A Mole
+                            </h3>
+                            <img src="/assets/ridwan.png" alt="" class="w-24 mt-5">
+                        </div>
+                        <p class="mt-3 text-[1rem] ">
+                            Game interaktif memukul tikus keluar lubang, melatih refleks dan kecepatan pemain.
                         </p>
-                        <button class="mt-5 text-slate-600 text-[1.05rem]">
-                            <a href="/">Read More</a>
-                        </button>
+                        <div class="flex justify-between mt-4">
+                            <p class=" text-[1rem] text-slate-700 font-semibold">
+                                Muhammad Ridwan
+                            </p>
+                            <a href="https://ridwan.hostspot.online/" target="_blank" class=" text-slate-600 text-[1rem]">Mainkan <i
+                                    class="fa-solid fa-link text-xs ml-1"></i></a>
+                        </div>
+
                     </div>
                 </div>
-                <div class="bg-white w-full shadow-lg hover:-translate-y-4 duration-300 transition-all hover:shadow-xl">
-                    <img src="assets/catat-ini-7-dampak-seks-bebas-bagi-kesehatan-fisik-dan-mental-halodoc.jpg"
+                <div class="bg-white w-full shadow-lg hover:scale-[1.02] duration-300 transition-all hover:shadow-xl">
+                    <img src="assets/tic-tac-toe.png" class="h-48"
                         alt="" />
                     <div class="p-6">
-                        <h3 class="text-slate-700 text-[1.5rem] mt-5 font-semibold">
-                            Tic-Tac-Toe
-                        </h3>
-                        <p class="mt-3 text-[1rem]">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Accusamus quaerat, adipisci quam est, ut sunt incidunt corporis
-                            Lorem ipsum natus porro, officiis soluta maxime delectus qui
-                            quos, incidunt vero laborum explicabo! Possimus?
+                        <div class="flex items-center justify-evenly">
+                            <h3 class="text-slate-700 text-[1.6rem] mt-5 font-semibold">
+                                Tic Tac Toe
+                            </h3>
+                            <img src="/assets/tictactoeQR.png" alt="" class="w-24 mt-5">
+                        </div>
+                        <p class="mt-3 text-[1rem] ">
+                            Game interaktif memukul tikus keluar lubang, melatih refleks dan kecepatan pemain.
                         </p>
-                        <button class="mt-5 text-slate-600 text-[1.05rem]">
-                            <a href="/">Read More</a>
-                        </button>
+                        <div class="flex justify-between mt-4">
+                            <p class=" text-[1rem] text-slate-700 font-semibold">
+                                Siswa RPL
+                            </p>
+                            <a href="https://tic-tac-toe-games-smkpesat.vercel.app/" target="_blank" class=" text-slate-600 text-[1rem]">Mainkan <i
+                                    class="fa-solid fa-link text-xs ml-1"></i></a>
+                        </div>
+
                     </div>
                 </div>
-                <div class="bg-white w-full shadow-lg hover:-translate-y-4 duration-300 transition-all hover:shadow-xl">
-                    <img src="assets/catat-ini-7-dampak-seks-bebas-bagi-kesehatan-fisik-dan-mental-halodoc.jpg"
+                <div class="bg-white w-full shadow-lg hover:scale-[1.02] duration-300 transition-all hover:shadow-xl">
+                    <img src="assets/memoryGames.png" class="h-48"
                         alt="" />
                     <div class="p-6">
-                        <h3 class="text-slate-700 text-[1.5rem] mt-5 font-semibold">
-                            Game 3
-                        </h3>
-                        <p class="mt-3 text-[1rem]">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Accusamus quaerat, adipisci quam est, ut sunt incidunt corporis
-                            Lorem ipsum natus porro, officiis soluta maxime delectus qui
-                            quos, incidunt vero laborum explicabo! Possimus?
+                        <div class="flex items-center justify-evenly">
+                            <h3 class="text-slate-700 text-[1.6rem] mt-5 font-semibold">
+                                Memory <br> Games
+                            </h3>
+                            <img src="/assets/memoryQR.png" alt="" class="w-24 mt-5">
+                        </div>
+                        <p class="mt-3 text-[1rem] ">
+                            Game interaktif ular memakan apple kotak oranye dengan keseruan yang akan didapat
                         </p>
-                        <button class="mt-5 text-slate-600 text-[1.05rem]">
-                            <a href="/">Read More</a>
-                        </button>
+                        <div class="flex justify-between mt-4">
+                            <p class=" text-[1rem] text-slate-700 font-semibold">
+                                Siswa RPL
+                            </p>
+                            <a href="https://memory-games-mu.vercel.app/" target="_blank"
+                                class=" text-slate-600 text-[1rem]">Mainkan <i
+                                    class="fa-solid fa-link text-xs ml-1"></i></a>
+                        </div>
+
                     </div>
                 </div>
+
             </div>
         </div>
     </section>
     <!-- END GAMES -->
-
-    <!-- WEB DESIGN -->
-    <section id="webdesign" class="bg-white py-28 p-10">
-        <div class="max-w-screen-xl mx-auto">
-            <h1 class="text-[2.4rem] md:text-[3.6rem] text-slate-700 font-semibold text-center">
-                Web Design Section <span class="text-blue-600">.</span>
-            </h1>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 gap-y-16 mt-12">
-                <div class="bg-white w-full shadow-lg">
-                    <img src="assets/catat-ini-7-dampak-seks-bebas-bagi-kesehatan-fisik-dan-mental-halodoc.jpg"
-                        alt="" />
-                    <div class="p-6">
-                        <h3 class="text-slate-700 text-[1.5rem] mt-5 font-semibold">
-                            Web Design 1
-                        </h3>
-                        <p class="mt-3 text-[1rem]">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Accusamus quaerat, adipisci quam est, ut sunt incidunt corporis
-                            Lorem ipsum natus porro, officiis soluta maxime delectus qui
-                            quos, incidunt vero laborum explicabo! Possimus?
-                        </p>
-                        <button
-                            class="mt-12 text-white text-[1.05rem] bg-blue-600 hover:bg-orange-300 transition-colors duration-[400ms] p-3 uppercase text-sm rounded font-semibold tracking-wider w-32">
-                            <a href="/">Preview</a>
-                        </button>
-                    </div>
-                </div>
-                <div class="bg-white w-full shadow-lg">
-                    <img src="assets/catat-ini-7-dampak-seks-bebas-bagi-kesehatan-fisik-dan-mental-halodoc.jpg"
-                        alt="" />
-                    <div class="p-6">
-                        <h3 class="text-slate-700 text-[1.5rem] mt-5 font-semibold">
-                            Web Design 2
-                        </h3>
-                        <p class="mt-3 text-[1rem]">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Accusamus quaerat, adipisci quam est, ut sunt incidunt corporis
-                            Lorem ipsum natus porro, officiis soluta maxime delectus qui
-                            quos, incidunt vero laborum explicabo! Possimus?
-                        </p>
-                        <button
-                            class="mt-12 text-white text-[1.05rem] bg-blue-600 hover:bg-orange-300 transition-colors duration-[400ms] p-3 uppercase text-sm rounded font-semibold tracking-wider w-32">
-                            <a href="/">Preview</a>
-                        </button>
-                    </div>
-                </div>
-                <div class="bg-white w-full shadow-lg">
-                    <img src="assets/catat-ini-7-dampak-seks-bebas-bagi-kesehatan-fisik-dan-mental-halodoc.jpg"
-                        alt="" />
-                    <div class="p-6">
-                        <h3 class="text-slate-700 text-[1.5rem] mt-5 font-semibold">
-                            Web Design 3
-                        </h3>
-                        <p class="mt-3 text-[1rem]">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Accusamus quaerat, adipisci quam est, ut sunt incidunt corporis
-                            Lorem ipsum natus porro, officiis soluta maxime delectus qui
-                            quos, incidunt vero laborum explicabo! Possimus?
-                        </p>
-                        <button
-                            class="mt-12 text-white text-[1.05rem] bg-blue-600 hover:bg-orange-300 transition-colors duration-[400ms] p-3 uppercase text-sm rounded font-semibold tracking-wider w-32">
-                            <a href="/">Preview</a>
-                        </button>
-                    </div>
-                </div>
-                <div class="bg-white w-full shadow-lg">
-                    <img src="assets/catat-ini-7-dampak-seks-bebas-bagi-kesehatan-fisik-dan-mental-halodoc.jpg"
-                        alt="" />
-                    <div class="p-6">
-                        <h3 class="text-slate-700 text-[1.5rem] mt-5 font-semibold">
-                            Web Design 4
-                        </h3>
-                        <p class="mt-3 text-[1rem]">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Accusamus quaerat, adipisci quam est, ut sunt incidunt corporis
-                            Lorem ipsum natus porro, officiis soluta maxime delectus qui
-                            quos, incidunt vero laborum explicabo! Possimus?
-                        </p>
-                        <button
-                            class="mt-12 text-white text-[1.05rem] bg-blue-600 hover:bg-orange-300 transition-colors duration-[400ms] p-3 uppercase text-sm rounded font-semibold tracking-wider w-32">
-                            <a href="/">Preview</a>
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- END WEB DESIGN -->
 
     <!-- WEB PROGRAMMING -->
     <section id="webprogramming" class="bg-gray-50 py-28 p-10">
@@ -314,67 +297,291 @@
             </h1>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8 gap-y-16 mt-12">
                 <div class="bg-white w-full shadow-lg">
-                    <img src="assets/catat-ini-7-dampak-seks-bebas-bagi-kesehatan-fisik-dan-mental-halodoc.jpg"
-                        alt="" />
+                    <img src="assets/ridwanHero.png" alt="" />
                     <div class="p-6">
-                        <h3 class="text-slate-700 text-[1.5rem] mt-5 font-semibold">
-                            Web Programming 1
+                        <h3 class="text-slate-700 text-[1.6rem] mt-5 font-semibold">
+                            Library Management
                         </h3>
                         <p class="mt-3 text-[1rem]">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Accusamus quaerat, adipisci quam est, ut sunt incidunt corporis
-                            Lorem ipsum natus porro, officiis soluta maxime delectus qui
-                            quos, incidunt vero laborum explicabo! Possimus?
-                        </p>
-                        <button
-                            class="mt-12 text-white text-[1.05rem] bg-blue-600 hover:bg-orange-300 transition-colors duration-[400ms] p-3 uppercase text-sm rounded font-semibold tracking-wider w-32">
-                            <a href="/">Preview</a>
-                        </button>
+                            Library Management adalah platform modern untuk mengelola perpustakaan. Fitur-fiturnya
+                            mencakup pencatatan koleksi buku,
+                            pengelolaan anggota, peminjaman, pengembalian, serta laporan aktivitas.
+                        <div class="flex justify-between mt-4">
+                            <p class=" text-[1rem] text-slate-700 font-semibold">
+                                Muhammad Ridwan
+                            </p>
+                            <a href="https://github.com/MuhammadRidwan01/sertikom2024" target="_blank"
+                                class=" text-slate-600 text-[1rem]">Preview <i
+                                    class="fa-solid fa-link text-xs ml-1"></i></a>
+                        </div>
                     </div>
                 </div>
                 <div class="bg-white w-full shadow-lg">
-                    <img src="assets/catat-ini-7-dampak-seks-bebas-bagi-kesehatan-fisik-dan-mental-halodoc.jpg"
-                        alt="" />
+                    <img src="assets/cvbuilderprev.png" alt="" />
                     <div class="p-6">
                         <h3 class="text-slate-700 text-[1.5rem] mt-5 font-semibold">
-                            Web Programming 2
+                            CV Builder
                         </h3>
                         <p class="mt-3 text-[1rem]">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Accusamus quaerat, adipisci quam est, ut sunt incidunt corporis
-                            Lorem ipsum natus porro, officiis soluta maxime delectus qui
-                            quos, incidunt vero laborum explicabo! Possimus?
+                            NipponVibes adalah platform perjalanan yang dirancang untuk membantu Anda menjelajahi
+                            keindahan Jepang. Dengan fitur
+                            lengkap seperti panduan wisata, rekomendasi destinasi populer, paket perjalanan, serta
+                            informasi budaya lokal,
+                            NipponVibes menjadi teman terbaik dalam merencanakan liburan Anda.
                         </p>
-                        <button
-                            class="mt-12 text-white text-[1.05rem] bg-blue-600 hover:bg-orange-300 transition-colors duration-[400ms] p-3 uppercase text-sm rounded font-semibold tracking-wider w-32">
-                            <a href="/">Preview</a>
-                        </button>
+                        <div class="flex justify-between mt-4">
+                            <p class=" text-[1rem] text-slate-700 font-semibold">
+                                Ariva Zweena
+                            </p>
+                            <a href="https://github.com/LorentzaZweena/cv-builder" target="_blank"
+                                class=" text-slate-600 text-[1rem]">Preview <i
+                                    class="fa-solid fa-link text-xs ml-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white w-full shadow-lg">
+                    <img src="assets/internportal.jpeg"  alt="" />
+                    <div class="p-6">
+                        <h3 class="text-slate-700 text-[1.5rem] mt-5 font-semibold">
+                            InternPortal
+                        </h3>
+                        <p class="mt-3 text-[1rem]">
+                            NipponVibes adalah platform perjalanan yang dirancang untuk membantu Anda menjelajahi
+                            keindahan Jepang. Dengan fitur
+                            lengkap seperti panduan wisata, rekomendasi destinasi populer, paket perjalanan, serta
+                            informasi budaya lokal,
+                            NipponVibes menjadi teman terbaik dalam merencanakan liburan Anda.
+                        </p>
+                        <div class="flex justify-between mt-4">
+                            <p class=" text-[1rem] text-slate-700 font-semibold">
+                                Ridwan, Pierre, Revan
+                            </p>
+                            <a href="https://github.com/MuhammadRidwan01/festida-web-development-Revan-translate" target="_blank"
+                                class=" text-slate-600 text-[1rem]">Preview <i
+                                    class="fa-solid fa-link text-xs ml-1"></i></a>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="bg-white md:w-1/2 mx-auto mt-10 shadow-lg">
-                <img src="assets/catat-ini-7-dampak-seks-bebas-bagi-kesehatan-fisik-dan-mental-halodoc.jpg" alt="" />
-                <div class="p-6">
-                    <h3 class="text-slate-700 text-[1.5rem] mt-5 font-semibold">
-                        Web Programming 3
-                    </h3>
-                    <p class="mt-3 text-[1rem]">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus
-                        quaerat, adipisci quam est, ut sunt incidunt corporis Lorem ipsum
-                        natus porro, officiis soluta maxime delectus qui quos, incidunt
-                        vero laborum explicabo! Possimus?
-                    </p>
-                    <button
-                        class="mt-12 text-white text-[1.05rem] bg-blue-600 hover:bg-orange-300 transition-colors duration-[400ms] p-3 uppercase text-sm rounded font-semibold tracking-wider w-32">
-                        <a href="/">Preview</a>
-                    </button>
-                </div>
-            </div>
+            
         </div>
     </section>
     <!-- END WEB PROGRAMMING -->
 
-    <footer></footer>
+
+
+    <!-- WEB DESIGN -->
+    <section id="webdesign" class="bg-white py-28 p-10">
+        <div class="max-w-screen-xl mx-auto">
+            <h1 class="text-[2.4rem] md:text-[3.6rem] text-slate-700 font-semibold text-center">
+                Web Design Section <span class="text-blue-600">.</span>
+            </h1>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 gap-y-16 mt-12">
+                <div class="bg-white w-full shadow-lg">
+                    <img src="assets/sattardesign.png" class="w-full h-[40vh]"
+                        alt="" />
+                    <div class="p-6">
+                        <h3 class="text-slate-700 text-[1.5rem] mt-5 font-semibold">
+                            Cafena
+                        </h3>
+                        <p class="mt-3 text-[1rem]">
+                            Website ini merupakan platform yang menjual berbagai macam biji kopi dan bubuk kopi dengan nama Cafenã. Desain website menciptakan
+                            suasana hangat dan otentik, mencerminkan cerita unik di balik setiap cangkir kopi.
+                        </p>
+                        <div class="flex justify-between mt-4">
+                            <p class=" text-[1rem] text-slate-700 font-semibold">
+                                Sattar
+                            </p>
+                            <a href="https://re-cafena.vercel.app/" target="_blank" class=" text-slate-600 text-[1rem]">Preview <i
+                                    class="fa-solid fa-link text-xs ml-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white w-full shadow-lg">
+                    <img src="assets/dikadesign.png" class="w-full h-[40vh]"
+                        alt="" />
+                    <div class="p-6">
+                        <h3 class="text-slate-700 text-[1.5rem] mt-5 font-semibold">
+                            PilgrimPaths
+                        </h3>
+                        <p class="mt-3 text-[1rem]">
+                            Website ini merupakan platform agensi perjalanan ibadah bernama PilgrimPaths yang berfokus pada penyediaan layanan
+                            paket Umroh dan Haji. Website ini memberikan kesan spiritual dan tulus dalam membantu calon jamaah menjalani perjalanan ibadah yang suci.
+                        </p>
+                        <div class="flex justify-between mt-4">
+                            <p class=" text-[1rem] text-slate-700 font-semibold">
+                                Ardhika Raditya
+                            </p>
+                            <a href="https://ardhikaaa.github.io/hajj-and-umrah-web/" target="_blank" class=" text-slate-600 text-[1rem]">Preview <i
+                                    class="fa-solid fa-link text-xs ml-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white w-full shadow-lg">
+                    <img src="assets/pepandesign.png" class="w-full h-[40vh]"
+                        alt="" />
+                    <div class="p-6">
+                        <h3 class="text-slate-700 text-[1.5rem] mt-5 font-semibold">
+                            KiwiAdventures
+                        </h3>
+                        <p class="mt-3 text-[1rem]">
+                            Kiwi Adventures adalah platform yang dirancang untuk menjadi panduan utama dalam menjelajahi berbagai destinasi wisata,
+                            baik lokal maupun internasional. Website ini menyediakan informasi lengkap tentang tempat-tempat menarik, serta paket perjalanan yang dirancang untuk memenuhi kebutuhan para pelancong
+                        </p>
+                        <div class="flex justify-between mt-4">
+                            <p class=" text-[1rem] text-slate-700 font-semibold">
+                                Raevandhani Fattan
+                            </p>
+                            <a href="https://raevandhani.github.io/KiwiAdventures/" target="_blank" class=" text-slate-600 text-[1rem]">Preview <i
+                                    class="fa-solid fa-link text-xs ml-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white w-full shadow-lg">
+                    <img src="assets/abdanHero.png" class="w-full h-[40vh]"
+                        alt="" />
+                    <div class="p-6">
+                        <h3 class="text-slate-700 text-[1.5rem] mt-5 font-semibold">
+                            Nippon Vibes
+                        </h3>
+                        <p class="mt-3 text-[1rem]">
+                            NipponVibes adalah platform perjalanan yang dirancang untuk membantu Anda menjelajahi
+                            keindahan Jepang. Dengan fitur
+                            lengkap seperti panduan wisata, rekomendasi destinasi populer, paket perjalanan, serta
+                            informasi budaya lokal,
+                            NipponVibes menjadi teman terbaik dalam merencanakan liburan Anda.
+                        </p>
+                        <div class="flex justify-between mt-4">
+                            <p class=" text-[1rem] text-slate-700 font-semibold">
+                                Abdan Syakuro
+                            </p>
+                            <a href="https://abdansyakuroo.github.io/NipponVibes/index.html" target="_blank" class=" text-slate-600 text-[1rem]">Preview <i
+                                    class="fa-solid fa-link text-xs ml-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white w-full shadow-lg">
+                    <img src="assets/alvjourney.png" class="w-full h-[40vh]"
+                        alt="" />
+                    <div class="p-6">
+                        <h3 class="text-slate-700 text-[1.5rem] mt-5 font-semibold">
+                            Alv Travel
+                        </h3>
+                        <p class="mt-3 text-[1rem]">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Accusamus quaerat, adipisci quam est, ut sunt incidunt corporis
+                            Lorem ipsum natus porro, officiis soluta maxime delectus qui
+                            quos, incidunt vero laborum explicabo! Possimus?
+                        </p>
+                        <div class="flex justify-between mt-4">
+                            <p class=" text-[1rem] text-slate-700 font-semibold">
+                                Farrel Alvidi
+                            </p>
+                            <a href="https://farrelalvidi.github.io/Travel-Website/" target="_blank" class=" text-slate-600 text-[1rem]">Preview <i
+                                    class="fa-solid fa-link text-xs ml-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    <!-- END WEB DESIGN -->
+
+    <!-- WEB PERSONAL -->
+    <section id="webdesign" class="bg-white py-28 p-10">
+        <div class="max-w-screen-xl mx-auto">
+            <h1 class="text-[2.4rem] md:text-[3.6rem] text-slate-700 font-semibold text-center">
+                Web Portofolio Section <span class="text-blue-600">.</span>
+            </h1>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 gap-y-16 mt-12">
+                <div class="bg-white w-full shadow-lg">
+                    <img src="assets/ridwanporto.png"
+                        alt="" />
+                    <div class="p-6">
+                        <h3 class="text-slate-700 text-[1.5rem] mt-5 font-semibold">
+                            Web Portofolio Ridwan
+                        </h3>
+                        <p class="mt-3 text-[1rem]">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Accusamus quaerat, adipisci quam est, ut sunt incidunt corporis
+                            Lorem ipsum natus porro, officiis soluta maxime delectus qui
+                            quos, incidunt vero laborum explicabo! Possimus?
+                        </p>
+                        <div class="mt-5">
+                            <a href="https://ridwan-porto.my.id" target="_blank" class=" text-slate-600 text-[1rem]">Preview <i
+                                    class="fa-solid fa-link text-xs ml-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white w-full shadow-lg">
+                    <img src="assets/hikamporto.png"
+                        alt="" />
+                    <div class="p-6">
+                        <h3 class="text-slate-700 text-[1.5rem] mt-5 font-semibold">
+                            Web Portofolio Alhikam Dirga
+                        </h3>
+                        <p class="mt-3 text-[1rem]">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Accusamus quaerat, adipisci quam est, ut sunt incidunt corporis
+                            Lorem ipsum natus porro, officiis soluta maxime delectus qui
+                            quos, incidunt vero laborum explicabo! Possimus?
+                        </p>
+                        <div class="mt-5">
+                            <a href="https://portfolio-opal-gamma-66.vercel.app/" target="_blank" class=" text-slate-600 text-[1rem]">Preview <i
+                                    class="fa-solid fa-link text-xs ml-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white w-full shadow-lg">
+                    <img src="assets/portfolioFarrel.png"
+                        alt="" />
+                    <div class="p-6">
+                        <h3 class="text-slate-700 text-[1.5rem] mt-5 font-semibold">
+                            Web Portofolio Farrel
+                        </h3>
+                        <p class="mt-3 text-[1rem]">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Accusamus quaerat, adipisci quam est, ut sunt incidunt corporis
+                            Lorem ipsum natus porro, officiis soluta maxime delectus qui
+                            quos, incidunt vero laborum explicabo! Possimus?
+                        </p>
+                        <div class="mt-5">
+                            <a href="https://ridwan-porto.my.id" class=" text-slate-600 text-[1rem]">Preview <i
+                                    class="fa-solid fa-link text-xs ml-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white w-full shadow-lg">
+                    <img src="assets/portfolioPierre.png" 
+                        alt="" />
+                    <div class="p-6">
+                        <h3 class="text-slate-700 text-[1.5rem] mt-5 font-semibold">
+                            Web Portofolio Pierre
+                        </h3>
+                        <p class="mt-3 text-[1rem]">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Accusamus quaerat, adipisci quam est, ut sunt incidunt corporis
+                            Lorem ipsum natus porro, officiis soluta maxime delectus qui
+                            quos, incidunt vero laborum explicabo! Possimus?
+                        </p>
+                        <div class="mt-5">
+                            <a href="https://my-porto-pierm.vercel.app/" class=" text-slate-600 text-[1rem]">Preview <i
+                                    class="fa-solid fa-link text-xs ml-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- END WEB DESIGN -->
+
+
+
+    <footer class="container mx-auto flex justify-center mb-10">
+        <h3><i class="fa-regular fa-copyright"></i> 2024 - SMK Informatika Pesat</h3>
+    </footer>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
 <script src="src/main.js"></script>
